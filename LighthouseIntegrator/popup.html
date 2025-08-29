@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Google Calendar Event & Extract Text</title>
+    <style>
+      body { width: 200px; font-family: Arial, sans-serif; }
+      input, button, textarea { width: 80%; margin: 5px 0; padding: 15px; }
+      textarea { height: 200px; }
+      button { width: 97%; height: 50px; }
+    </style>
+  </head>
+  <body>
+    <div class = "container" id = "eventCreator">
+    <input type="text" id="event-title" placeholder="Event Title">
+    <input type="datetime-local" id="event-start-time">
+    <input type="datetime-local" id="event-end-time">
+    <button id="create-event">Create Event</button>
+    </div>
+    <script src="popup.js"></script>
+    <script src="content.js"></script>
+  </body>
+</html>

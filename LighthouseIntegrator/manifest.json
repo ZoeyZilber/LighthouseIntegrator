@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Lighthouse Integrator",
+  "version": "1.0",
+  "description": "Read Lighthouse page and create a corresponding google calendar event",
+  "permissions": [
+    "identity",
+    "identity.email",
+    "scripting",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+},
+  "oauth2": {
+    "client_id": "760311757022-4sorq70tq4broac8vskhvj92bu4kgpmc.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar"
+    ]
+  },
+  "host_permissions": [
+     "http://*/*",
+    "https://*/*"
+  ],
+"content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
