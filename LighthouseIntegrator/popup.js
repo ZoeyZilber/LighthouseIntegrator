@@ -103,7 +103,7 @@ function filterString(inputString) {
 document.getElementById('create-event').addEventListener('click', () => {
   console.log("Create event button clicked");
 
-  const title = document.getElementById('event-title').value;
+  const title = "Encore" + document.getElementById('event-title').value;
   const location = document.getElementById('event-location').value;
   const startTime = document.getElementById('event-start-time').value;
   const endTime = document.getElementById('event-end-time').value;
